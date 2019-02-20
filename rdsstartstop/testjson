@@ -1,0 +1,8 @@
+{
+  "resource_arns": [
+      "arn:aws:rds:us-east-1:132131715149:db:exampledb",
+      "arn:aws:rds:us-east-1:132131715149:db:prodrds"
+  ],
+  "function_name": "e2e-testing-lambda",
+  "region": "us-east-1"
+}
