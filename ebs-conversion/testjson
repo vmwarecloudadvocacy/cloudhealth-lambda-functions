@@ -1,0 +1,8 @@
+{
+  "resource_arns": [
+      "arn:aws:ec2:ca-central-1:132131715149:instance:i-0ebf3229b4be05cc3",
+      "arn:aws:ec2:ca-central-1:132131715149:instance:i-092f83e27547de627"
+  ],
+  "function_name": "ec2-testing-lambda",
+  "region": "ca-central-1"
+}

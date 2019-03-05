@@ -1,0 +1,27 @@
+{'BlockDeviceMappings': 
+  [
+    {'DeviceName': '/dev/xvda', 
+     'Ebs': 
+            {'AttachTime': datetime.datetime(2019, 2, 19, 22, 33, 26, tzinfo=tzlocal()), 
+             'DeleteOnTermination': True, 
+             'Status': 'attached', 
+             'VolumeId': 'vol-0bc4e83e8f0039df5'}
+     },
+     {'DeviceName': '/dev/xvdcz', 
+      'Ebs': 
+            {'AttachTime': datetime.datetime(2019, 2, 19, 22, 33, 26, tzinfo=tzlocal()), 
+             'DeleteOnTermination': True,
+             'Status': 'attached',
+             'VolumeId': 'vol-0b9b2433da0c80cbe'}
+      }
+  ], 
+  'InstanceId': 'i-0ebf3229b4be05cc3', 
+  'ResponseMetadata': {'RequestId': 'e56a20c9-0684-4a3a-82c5-f2d6fd2dee6e', 
+                       'HTTPStatusCode': 200, 
+                       'HTTPHeaders': 
+                                {'content-type': 'text/xml;charset=UTF-8',
+                                 'content-length': '1017',
+                                 'date': 'Wed, 20 Feb 2019 07:52:21 GMT',
+                                 'server': 'AmazonEC2'}, 
+                       'RetryAttempts': 0}
+}
