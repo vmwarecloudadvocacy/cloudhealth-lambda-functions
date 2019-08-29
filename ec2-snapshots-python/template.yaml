@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >  
+  Sample SAM Template for EC2 Snaphot
+
+Globals:
+  Function:
+    Timeout: 5
+
+Resources:
+  EC2Snapshot:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./
+      Handler: app.lambda_handler
+      Runtime: python3.7
+      Tracing: Active
+      Policies:
+        - AmazonEC2FullAccess
+      Environment:
+        Variables:
+          REGION: us-west-2
