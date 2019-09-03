@@ -1,0 +1,13 @@
+## macOS
+.DS_Store
+
+## Go executables
+rds-stopinstance-go/rds-stopinstance
+ec2-snapshots-go/ec2-snaphot
+ebs-modify-volume-go/ebs-modify-volume
+
+## Python VirtualEnv
+chlf
+
+## Python builds
+*/.aws-sam

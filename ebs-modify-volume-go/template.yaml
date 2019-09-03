@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >  
+  Sample SAM Template for EBS Modify Volume
+
+Globals:
+  Function:
+    Timeout: 5
+
+Resources:
+  EBSModifyVolume:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./
+      Handler: ebs-modify-volume
+      Runtime: go1.x
+      Tracing: Active
+      Policies:
+        - AmazonEC2FullAccess
+      Environment:
+        Variables:
+          REGION: us-west-2

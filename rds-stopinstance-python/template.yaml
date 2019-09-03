@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >  
+  Sample SAM Template for Stop RDS Instance
+
+Globals:
+  Function:
+    Timeout: 5
+
+Resources:
+  StopRDSInstance:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./
+      Handler: app.lambda_handler
+      Runtime: python3.7
+      Tracing: Active
+      Policies:
+        - AmazonRDSFullAccess
+      Environment:
+        Variables:
+          REGION: us-west-2
